@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\frontend",
+    "\\frontend\\public",
+    "\\frontend\\src\\components",
+    "\\viewfi",
+    "\\viewfi\\smart-contracts",
+    "\\viewfi\\smart-contracts\\programs",
+    "\\viewfi\\smart-contracts\\programs\\smart-contracts",
+    "\\viewfi\\smart-contracts\\programs\\smart-contracts\\src"
+  ],
+  "SelectedNode": "\\frontend\\public\\index.html",
+  "PreviewInSolutionExplorer": false
+}
