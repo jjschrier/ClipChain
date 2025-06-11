@@ -1,6 +1,18 @@
+
+import '@solana/wallet-adapter-react-ui/styles.css';
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CreatorTokenStats from './components/CreatorTokenStats';
+
+function App() {
+    return (
+        <WalletConnect>
+            <CreatorTokenStats />
+        </WalletConnect>
+    );
+}
+
 
 function App() {
   return (

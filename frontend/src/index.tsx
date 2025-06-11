@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CreatorTokenStats from './components/CreatorTokenStats';
+
+function App() {
+    return (
+        <WalletConnect>
+            <CreatorTokenStats />
+        </WalletConnect>
+    );
+}
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
