@@ -1,11 +1,20 @@
-.anchor
-.DS_Store
-target
-**/*.rs.bk
-node_modules
-test-ledger
-.yarn
+# Ignore Node modules and build artifacts
 node_modules/
+dist/
+
+# Ignore Visual Studio & VS Code data
 .vs/
+.vscode/
 
+# Rust & Anchor artifacts
+target/
+**/target/
+**/*.so
+**/*.d.ts
 
+# IDL and deployment keypairs
+target/idl/
+target/deploy/*.json
+
+# OS metadata
+.DS_Store

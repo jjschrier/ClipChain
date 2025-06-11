@@ -8,11 +8,14 @@ edition = "2021"
 members = ["programs/clipchain"]
 
 [provider]
-cluster = "localnet"
-wallet = "C:/Users/jjsch/.config/solana/id.json"
+cluster = "devnet"
+wallet = "/home/jjsch/.config/solana/id.json"
+
 
 [programs.localnet]
 clipchain = "DPYRPGR7cLrtYR1E3E3yjhFbfnZk9qQh6eoryvSZiZBY"
+clipchain = "programs/clipchain"
+
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
@@ -21,5 +24,6 @@ test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
 url = "https://anchor.projectserum.com"
 
 [toolchain]
-anchor_version = "0.31.1"
 solana_version = "1.18.11"
+
+

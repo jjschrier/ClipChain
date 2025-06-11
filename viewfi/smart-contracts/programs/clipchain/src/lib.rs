@@ -63,7 +63,7 @@ pub struct ClaimRevenue<'info> {
 
     #[account(
         init_if_needed,
-        seeds = [user_wallet.key().as_ref()],
+        seeds = [b"user", user_wallet.key().as_ref()],
         bump,
         payer = user_wallet,
         space = 8 + 1
@@ -84,12 +84,14 @@ pub struct ClaimRevenue<'info> {
 }
 
 #[account]
+#[derive(Default)]
 pub struct RevenuePool {
     pub total_funds: u64,
     pub bump: u8,
 }
 
 #[account]
+#[derive(Default)]
 pub struct UserState {
     pub claimed: bool,
 }
