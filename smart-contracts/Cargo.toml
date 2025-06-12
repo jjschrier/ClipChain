@@ -1,0 +1,5 @@
+[workspace]
+members = ["programs/clipchain"]
+
+[profile.release]
+overflow-checks = true
