@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+🎥 ClipChain: Tokenized Attention Economy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ClipChain is a Web3 video delivery platform built to align incentives between creators and their audiences. By leveraging the Solana blockchain, the platform transforms passive viewership into active participation, allowing fans to earn creator-specific tokens through engagement and verifiable watch-time.
 
-Currently, two official plugins are available:
+🚀 The Concept
+Traditional content platforms capture the majority of advertising value, leaving viewers with zero stake in the ecosystems they support. ClipChain decentralizes this value by:
+Tokenizing Attention: Using ad-revenue logic to buy creator tokens from the open market.
+Proof-of-Engagement: Distributing tokens back to fans based on real-time engagement metrics.
+Direct Community Ownership: Aligning a creator’s audience growth with the value of their unique token.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Technical Stack & Architecture
 
-## Expanding the ESLint configuration
+Core Infrastructure
+Framework: Next.js / React (Modern, high-performance UI)
+Database: Firebase (Real-time metadata and user state management)
+Video Delivery: Integrated with UploadThing for scalable, secure content hosting.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Web3 & Blockchain
+Network: Built on Solana for sub-second transaction speeds and near-zero fees.
+Wallet Integration: Support for Phantom, Solflare, and Backpack via Solana Wallet Adapter.
+Reward Logic: Custom backend algorithms for calculating watch_time × loyalty_multiplier.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🔧 System Features
+Creator Dashboard: Centralized hub for managing Mint Addresses, Daily Mint Caps, and Reward Rates.
+Identity & Access Management (IAM): Multi-tier subscription paths (Basic → Pro → Boosted) with specific permission sets.
+Cryptographic Security: Secure handling of public keys and transaction signing.
+Safe Mode Content Policy: Logic-based toggle for age-verification and sensitive content filtering.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🧪 Educational Intent
+This project serves as my primary technical sandbox while pursuing a Computer Science degree and Cisco Networking Academy certifications. It demonstrates my competency in:
+API Integration & Security
+State Management & Database Architecture
+Network Data Handling
+Systems Administration & Automated Logic
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+📸 Project Showcase
+<img width="1209" height="1192" alt="image" src="https://github.com/user-attachments/assets/38a49b0d-45b6-4d6b-9130-38e3bcfb8b63" />
