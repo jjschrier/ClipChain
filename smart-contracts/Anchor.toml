@@ -1,15 +1,13 @@
-﻿[programs.localnet]
-clipchain = "DPYRPGR7cLrtYR1E3E3yjhFbfnZk9qQh6eoryvSZiZBY"
+﻿[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
 
 [programs.devnet]
-clipchain = "DPYRPGR7cLrtYR1E3E3yjhFbfnZk9qQh6eoryvSZiZBY"
-
-[provider]
-cluster = "devnet"
-wallet = "/home/jjsch/.config/solana/id.json"
+clipchain = "CLIPCHAIN_PROGRAM_ID_REPLACE_ME"
 
 [scripts]
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "mocha -r ts-node/register tests/**/*.ts"
 
 [toolchain]
 solana_version = "1.18.11"
+anchor_version = "0.31.1"

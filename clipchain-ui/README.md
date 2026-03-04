@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 🎥 ClipChain: Tokenized Attention Economy
 
 ClipChain is a Web3 video delivery platform built to align incentives between creators and their audiences. By leveraging the Solana blockchain, the platform transforms passive viewership into active participation, allowing fans to earn creator-specific tokens through engagement and verifiable watch-time.
@@ -35,3 +36,23 @@ Systems Administration & Automated Logic
 
 📸 Project Showcase
 <img width="1209" height="1192" alt="image" src="https://github.com/user-attachments/assets/38a49b0d-45b6-4d6b-9130-38e3bcfb8b63" />
+=======
+# ClipChain
+
+ClipChain is a decentralized video platform where content creators:
+
+- Upload videos to Firebase Storage
+- Are automatically assigned a unique Solana SPL Token
+- Can reward fans with that token based on video watch time
+- All interactions are stored in Firestore
+- Wallet authentication via Solana adapter (e.g., Phantom)
+- Fans earn yield in real-time via watch hooks
+
+## Key Files:
+- `App.tsx` - Entry point
+- `Dashboard.tsx` - Main creator dashboard
+- `UploadVideo.tsx` - Upload and trigger airdrop
+- `lib/solana.ts` - Token logic (mint, airdrop)
+- `lib/hooks/useViewerWatch.ts` - Tracks live view duration
+- `firebase.ts` - Firebase app and Firestore setup
+>>>>>>> Stashed changes
