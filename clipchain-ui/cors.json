@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["https://clip-chain.web.app","https://clip-chain.firebaseapp.com","http://localhost:5173"],
+    "method": ["GET","POST","PUT","HEAD","DELETE","OPTIONS"],
+    "responseHeader": ["Content-Type","Authorization","X-Goog-Resumable"],
+    "maxAgeSeconds": 3600
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "watch_logs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "settled", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "watch_logs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "viewer", "order": "ASCENDING" },
+        { "fieldPath": "creator", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
